@@ -101,5 +101,15 @@ Use source .venv/bin/activate.fish on the Fish shell
 
 Executing the program will activate the Python virtual environment. Depending on your configuration you might also see your terminal prompt change.
 
+Mine changed from
+
+➜ folder
+
+to
+
+(.venv) ➜ folder
+
+Now running pip will use this virtual environment instead of the global environment.
+
 
      """

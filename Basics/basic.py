@@ -1,5 +1,5 @@
 from enum import Enum
-
+from collections import Counter
 # Enum
 
 
@@ -57,7 +57,7 @@ items[1:1] = ["Test1", "Test2"]
 # sort() will only work if the list holds values that can be compared. Strings and integers for example can’t be compared,
 # items.sort()
 # The sort() methods orders uppercase letters first, then lowercased letters. To fix this, use:
-# items.sort(key=str.lower)
+items.sort(key=str.lower)
 # Sorting modifies the original list content. To avoid that, you can copy the list content using
 # itemscopy = items[:]
 # or use sorted method
@@ -119,7 +119,16 @@ def hello(name='my friend', age=0):  # default values
     print("age", age)
     age = 1
     print("age", age)
+
+
 age = 5
 hello(age=age)
 print(age)
 
+
+# Counter is a subclass of dict that’s specially designed for counting hashable objects in Python.
+# It’s a dictionary that stores objects as keys and counts as values. To count with Counter,
+# you typically provide a sequence or iterable of hashable objects as an argument to the class’s constructor.
+counter1 = Counter("mississippi")
+counter2 = Counter(list("mississippiii"))
+print(counter1 == counter2)
