@@ -65,7 +65,7 @@ __ne__() for not equal (!=)
 Then you have methods to interoperate with arithmetic operations:
 
 __add__() respond to the + operator
-__sub__() respond to the – operator
+__sub__() respond to the - operator
 __mul__() respond to the * operator
 __truediv__() respond to the / operator
 __floordiv__() respond to the // operator
