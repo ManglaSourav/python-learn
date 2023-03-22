@@ -70,3 +70,4 @@ print("\n\n", df1.loc[:"Paris","four"])
 
 
 
+

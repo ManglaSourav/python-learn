@@ -11,18 +11,22 @@ class Solution:
             if i >= len(nums):
                 res.append(subset.copy())
                 return
-
+            
             # include nums[i]
             subset.append(nums[i])
+            # print("before 1st dfs", i, subset)
             dfs(i+1)
 
             # not include nums[i]
             subset.pop()
+            # print("After 1st dfs", i, subset)
             dfs(i+1)
+            # print("After 2nd dfs", i, subset)
 
         dfs(0)
 
         return res
+
 
 
 print(Solution().subsets([1, 2, 3]))
