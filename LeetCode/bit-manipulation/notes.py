@@ -47,9 +47,10 @@ def remove_last_bit(value):
     return value & (value-1)
 
 
-# val = 0b111
+val = 0b101
+# print(val)
 # print_bin_dec(set_bit(val, 2)) # set third bit to one from left side
-# print(set_bit(val, 2))
+# print(set_bit(val, 1))
 # val = set_bit(val, 2)
 # print(test_bit(val, 2)) # test third bit to one from left side
 # print_bin_dec(val) # 0b1110 
