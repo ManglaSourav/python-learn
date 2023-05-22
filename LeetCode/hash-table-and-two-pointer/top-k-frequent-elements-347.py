@@ -15,6 +15,7 @@ class Solution:
         for key, value in count.items():
             freq[value].append(key)
 
+        # print(freq)
         res = []
         for i in range(len(freq) - 1, 0, -1):
             for i in freq[i]:
@@ -25,4 +26,4 @@ class Solution:
 
 
 k_freq = Solution()
-print(k_freq.topKFrequent([1, 1, 1, 2, 2, 3, 3, 3, 3], 2))
+print(k_freq.topKFrequent([1, 1, 2, 2, 3, 3, 3, 3], 2))

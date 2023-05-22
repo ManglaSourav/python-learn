@@ -7,7 +7,6 @@ from collections import defaultdict
 class Solution:
     def findOrder(self, numCourses: int, prerequisites: List[List[int]]) -> List[int]:
         
-        
         premap = defaultdict(list)
         
         for a,b in prerequisites:
@@ -17,13 +16,11 @@ class Solution:
         cycle = set()
         visited = set()
         
-        def dfs(a):
-            
+        def dfs(a): 
             if a in cycle:
                 return False
             if a in visited:
                 return True
-            
             cycle.add(a)
             
             for i in premap[a]:

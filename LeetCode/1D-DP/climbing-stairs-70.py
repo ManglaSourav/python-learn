@@ -21,4 +21,6 @@ class Solution:
           
         return dfs(0)
     
-print(Solution().climbStairs(38))
+
+    
+print(Solution().climbStairs2([1,100,1,1,1,100,1,1,100,1]))
